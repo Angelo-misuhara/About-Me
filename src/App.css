@@ -1,0 +1,53 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  color: #16151a;
+}
+.cta-pr-btn:hover svg {
+  transform: translateX(5px);
+}
+.imgg {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.imgg.visible {
+  opacity: 1;
+}
+
+@media screen and (max-width: 598px) {
+  #imgsec {
+    display: none;
+  }
+  #homePage {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #title {
+    display: none;
+  }
+  .whitespace-normal {
+    text-align: justify;
+    width: 20rem;
+  }
+  #buttons-Homepage {
+    margin-top: 7rem;
+  }
+  #imgSkil{
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr;
+    gap: 2rem;
+    place-items: center;
+    padding: 2rem;
+  }
+  .img{
+    width: 3rem;
+  }
+  #paragrapSkill{
+    width: 100vw;
+  }
+  #ps{
+    display: flex;
+    padding: 1rem;
+    margin-top: 0;
+  }
+}
