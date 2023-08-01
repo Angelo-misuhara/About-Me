@@ -12,7 +12,7 @@ const Homepage = () => {
 
   const Skills = 'Skills'
   const Project = 'Project'
-  const style = 'cta-pr-btn px-4 py-2 text-[#16151a] font-medium bg-indigo-50 rounded-full inline-flex items-center'
+  const style = 'cta-pr-btn px-4 py-2 text-[#221115] bg-[#D3E3E9] hover:bg-[#6FB8A7] font-medium rounded-md inline-flex items-center'
   
   const images = ['/img/imgMainPage.jpg', '/img/imgMainPage2.jpg', '/img/imgMainPage3.jpg', '/img/imageMainPage4.jpg', '/img/imageMainPage5.jpg']
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -29,7 +29,7 @@ const Homepage = () => {
   }, [images.length]);
   return (
     <>
-      <div className='bg-[#E5F9DB] w-screen h-screen grid pt-20  grid-cols-2 gap-3' id='homePage'>
+      <div className='bg-[#FCF8F9] w-screen h-screen grid pt-20  grid-cols-2 gap-3' id='homePage'>
         
           <div className='hidden rounded w-2/6' id='phonmeIMG'>
           <img src="/img/imageMainPage5.jpg" alt="" className='border-md' />
@@ -38,7 +38,7 @@ const Homepage = () => {
               <div className=" flex flex-col " id='title'>
               <h1 className="font-semibold text-6xl">
                 FrontEnd
-                <span className="text-4xl text-[#A2A378]"> Developer</span>
+                <span className="text-4xl text-[#4FA165]"> Developer</span>
               </h1>
             </div>
             <div className="flex mt-3 text-justify">

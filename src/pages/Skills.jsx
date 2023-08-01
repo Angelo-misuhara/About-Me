@@ -8,13 +8,14 @@ const Skills = () => {
   const Project = 'Project'
   const routeMain = '/'
   const Main = 'MainPage'
-  const style = 'cta-pr-btn px-4 py-2 text-[#16151a] font-medium bg-[#E5F9DB ] rounded-full inline-flex items-center'
+    const style = 'cta-pr-btn px-4 py-2 text-[#221115] bg-[#D3E3E9] hover:bg-[#6FB8A7] font-medium rounded-md inline-flex items-center'
+
 
   const lang =['/img/java-32px.png','/img/mysql-32px.png','/img/java-script-32px.png','/img/react-32px.png','/img/c++-32px.png','/img/tailwind-32x.png']
 
   return (
     <>
-      <div className='h-screen w-screen bg-[#E8F6EF]  grid grid-cols-1 place-content-center pt-[2rem] gap-4 '>
+      <div className='h-screen w-screen bg-[#FCF8F9]  grid grid-cols-1 place-content-center pt-[2rem] gap-4 '>
           <div className=''>
             <h1 className='text-5xl text-center font-medium'>
               <span className='text-4xl '> > </span>Tech Stack
