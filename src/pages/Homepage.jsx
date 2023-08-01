@@ -16,6 +16,23 @@ const Homepage = () => {
   
   const images = ['/img/imgMainPage.jpg', '/img/imgMainPage2.jpg', '/img/imgMainPage3.jpg', '/img/imageMainPage4.jpg', '/img/imageMainPage5.jpg']
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // const contacts =['/img/facebook-24.png','/img/instagram-24.png','/img/linkedin-24.png']\
+
+  const contacts = [
+    {
+      link: 'https://www.instagram.com/gel.hong/',
+      img:'/img/instagram-24.png'
+    },
+     {
+      link: 'https://www.facebook.com/angelo.yocor?mibextid=ZbWKwL',
+      img:'/img/facebook-24.png'
+    },
+      {
+      link: 'https://www.linkedin.com/in/angelo-yocor-0885aa254/',
+      img:'/img/linkedin-24.png'
+    }
+  ]
   
   useEffect(() => {
     const interval = setInterval(() => {
@@ -29,7 +46,7 @@ const Homepage = () => {
   }, [images.length]);
   return (
     <>
-      <div className='bg-[#FCF8F9] w-screen h-screen grid pt-20  grid-cols-2 gap-3' id='homePage'>
+      <div className='bg-[#FCF8F9] w-screen pb-3 grid pt-[3rem]  grid-cols-2 gap-3' id='homePage'>
         
           <div className='hidden rounded w-2/6' id='phonmeIMG'>
           <img src="/img/imageMainPage5.jpg" alt="" className='border-md' />
@@ -41,10 +58,17 @@ const Homepage = () => {
                 <span className="text-4xl text-[#4FA165]"> Developer</span>
               </h1>
             </div>
-            <div className="flex mt-3 text-justify">
+            <div className="flex flex-col mt-3 text-justify">
               <p>
                 Hi! Im Angelo. Im aspiring Web Dev, My creativity is the compass that guides me through the boundless ocean of coding possibilities. I approach each project fearlessly, experimenting, and pushing the boundaries to create unforgettable digital experiences.
-              </p>
+            </p>
+            <div className='flex flex-row gap-2 pt-3'>
+               {contacts.map((img, key) => (
+                 <a href={img.link} target='_blank' key={key}>
+                    <img src={img.img} alt="" className='w-[1rem]'/>
+              </a>
+            ))}
+            </div>
             </div>
             {/*mt-20  */}
             <div className='mt-[4.5rem] flex flex-col items-start gap-7' id='buttons-Homepage'>

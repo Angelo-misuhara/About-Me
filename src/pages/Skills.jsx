@@ -22,9 +22,9 @@ const Skills = () => {
             </h1>
           </div>
 
-          <div className='flex flex-wrap justify-center gap-11 pt-9' id='imgSkil'>
+          <div className='flex flex-wrap justify-center gap-11 pt-9 ' id='imgSkil'>
             {lang.map((img, key) => (
-              <img src={img} alt="" key={key} className='img' />
+              <img src={img} alt="" key={key} className='img max-w-xs transition duration-600 ease-in-out hover:-translate-y-3 hover:scale-100' />
             ))}
           </div>
           <div className='grid mt-8 grid-flow-row place-content-center' id="ps">
