@@ -14,7 +14,7 @@ const Homepage = () => {
   const Project = 'Project'
   const style = 'cta-pr-btn px-4 py-2 text-[#16151a] font-medium bg-indigo-50 rounded-full inline-flex items-center'
   
-  const images = ['/img/imgMainPage.jpg', '/img/imgMainPage2.jpg', '/img/imgMainPage3.jpg']
+  const images = ['/img/imgMainPage.jpg', '/img/imgMainPage2.jpg', '/img/imgMainPage3.jpg', '/img/imageMainPage4.jpg', '/img/imageMainPage5.jpg']
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   useEffect(() => {

@@ -6,9 +6,11 @@ const Skills = () => {
 
   const routeProjects = '/Projects'
   const Project = 'Project'
-  const style = 'cta-pr-btn px-4 py-2 text-[#16151a] font-medium bg-[#E5F9DB] rounded-full inline-flex items-center'
+  const routeMain = '/'
+  const Main = 'MainPage'
+  const style = 'cta-pr-btn px-4 py-2 text-[#16151a] font-medium bg-[#E5F9DB ] rounded-full inline-flex items-center'
 
-  const lang =['/img/java-32px.png','/img/mysql-32px.png','/img/java-script-32px.png','/img/react-32px.png','/img/c++-32px.png']
+  const lang =['/img/java-32px.png','/img/mysql-32px.png','/img/java-script-32px.png','/img/react-32px.png','/img/c++-32px.png','/img/tailwind-32x.png']
 
   return (
     <>
@@ -16,7 +18,7 @@ const Skills = () => {
         <div className=' grid grid-cols-1 place-content-center pt-[5rem] gap-4 '>
           <div className=''>
             <h1 className='text-5xl text-center font-medium'>
-              <span className='text-4xl '> -> </span>Tech Stack
+              <span className='text-4xl '> > </span>Tech Stack
             </h1>
           </div>
 
@@ -31,7 +33,7 @@ const Skills = () => {
             </p>
           </div>
           <div className='flex flex-row justify-center gap-4 mt-8'>
-            <LeftButton route={routeProjects} content={Project} style={style} />
+            <LeftButton route={routeMain} content={Main} style={style} />
             <RightButton route={routeProjects} content={Project} style={style} />
           </div>
           
