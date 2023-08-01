@@ -23,7 +23,7 @@ const Homepage = () => {
       setCurrentImageIndex(prevIndex =>
         (prevIndex + 1) % images.length // Loop back to the first image after reaching the last one.
       );
-    }, 2500); // 3000 milliseconds (3 seconds)
+    }, 2200); // 2000 milliseconds (2 seconds)
 
     return () => clearInterval(interval); // Clean up the interval when the component unmounts.
   }, [images.length]);
