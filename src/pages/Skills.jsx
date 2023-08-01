@@ -14,8 +14,7 @@ const Skills = () => {
 
   return (
     <>
-      <div className='h-screen w-screen bg-[#E8F6EF]'>
-        <div className=' grid grid-cols-1 place-content-center pt-[5rem] gap-4 '>
+      <div className='h-screen w-screen bg-[#E8F6EF]  grid grid-cols-1 place-content-center pt-[2rem] gap-4 '>
           <div className=''>
             <h1 className='text-5xl text-center font-medium'>
               <span className='text-4xl '> > </span>Tech Stack
@@ -38,7 +37,6 @@ const Skills = () => {
           </div>
           
         </div>
-      </div>
     </>
   )
 }

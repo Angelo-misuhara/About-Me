@@ -29,10 +29,13 @@ const Homepage = () => {
   }, [images.length]);
   return (
     <>
-      <div className='bg-[#E5F9DB] w-screen h-screen'>
-        <div className="grid relative pt-20  grid-cols-2 gap-3" id='homePage'>
+      <div className='bg-[#E5F9DB] w-screen h-screen grid pt-20  grid-cols-2 gap-3' id='homePage'>
+        
+          <div className='hidden rounded w-2/6' id='phonmeIMG'>
+          <img src="/img/imageMainPage5.jpg" alt="" className='border-md' />
+        </div>
           <div className=" px-8 flex flex-col" id="intro-left">
-            <div className=" flex flex-col " id='title'>
+              <div className=" flex flex-col " id='title'>
               <h1 className="font-semibold text-6xl">
                 FrontEnd
                 <span className="text-4xl text-[#A2A378]"> Developer</span>
@@ -44,20 +47,19 @@ const Homepage = () => {
               </p>
             </div>
             {/*mt-20  */}
-            <div className='mt-20 flex flex-col items-start gap-7' id='buttons-Homepage'>
+            <div className='mt-[4.5rem] flex flex-col items-start gap-7' id='buttons-Homepage'>
               <RightButton route={routeSkills} content={Skills} style={style} />
               <RightButton  route={routeProjects} content={Project} style={style} />
             </div>
           </div>
             <div className=" flex relative  justify-center pt-[11rem]" id='imgsec'>
             {images.map((img, index) => (
-              <img key={index} src={img} alt="" className={` imgg z-10 rounded-md w-3/6 absolute opacity-0 ${index === currentImageIndex ? 'visible' : ''}`} />
+              <img key={index} src={img} alt="" className={` imgg rounded-md w-3/6 absolute opacity-0 ${index === currentImageIndex ? 'visible' : ''}`} />
               ))}
           </div>
-        </div>
-      </div>
+          </div>
+       
     </>
-//  className='rounded-md w-3/6 '
   )
 }
 

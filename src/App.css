@@ -20,7 +20,17 @@
   }
   #homePage {
     display: flex;
-    flex-wrap: wrap;
+   flex-direction: column;
+    border: green dotted;
+  }
+  #phonmeIMG{
+    display: flex;
+    justify-content: center;
+    width: 99vw;
+  }
+#phonmeIMG img{
+    width: 12rem;
+    border-radius: 2rem;
   }
   #title {
     display: none;
@@ -30,22 +40,23 @@
     width: 20rem;
   }
   #buttons-Homepage {
-    margin-top: 7rem;
+    margin-top:3rem;
   }
-  #imgSkil{
+
+  #imgSkil {
     display: grid;
-    grid-template-columns: .5fr .5fr .5fr;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
     gap: 2rem;
     place-items: center;
     padding: 2rem;
   }
-  .img{
+  .img {
     width: 3rem;
   }
-  #paragrapSkill{
+  #paragrapSkill {
     width: 100vw;
   }
-  #ps{
+  #ps {
     display: flex;
     padding: 1rem;
     margin-top: 0;
