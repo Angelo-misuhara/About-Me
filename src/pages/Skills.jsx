@@ -23,10 +23,10 @@ const Skills = () => {
 
   return (
     <>
-      <div className=' w-screen bg-[#FCF8F9]  grid grid-cols-1 place-content-center pt-[2rem] gap-4 ' id='containerSkill'>
+      <div className=' w-screen bg-[#FCF8F9]  grid grid-cols-1 place-content-center pt-[4rem] gap-4 ' id='containerSkill'>
           <div className=''>
             <h1 className='text-4xl text-center font-medium'data-aos='fade'>
-             > <span className='text-5xl 'data-aos='zoom-in-up'> Tech Stack </span>
+            &gt; <span className='text-5xl 'data-aos='zoom-in-up'> Tech Stack </span>
             </h1>
           </div>
 
@@ -40,10 +40,10 @@ const Skills = () => {
           </div>
           <div className='grid mt-8 grid-flow-row place-content-center' id="ps"  data-aos="fade-up">
             <p className='text-justify  w-[50rem]'id='paragrapSkill'>
-              My programming journey has been an exciting adventure. Starting from scratch, I tackled challenges, gained confidence, and now enjoy creating projects of my own. The learning never stops, and I'm thrilled to explore more.
+              My programming journey has been an exciting adventure. Starting from scratch, I tackled challenges, gained confidence, and now enjoy creating projects of my own. The learning never stops, and  I&#39;m thrilled to explore more.
             </p>
           </div>
-          <div className='flex flex-row justify-center gap-4 mt-[5rem]' data-aos="fade-up" id='button-skills'>
+          <div className='flex flex-row justify-center gap-4 mt-[5rem]' data-aos="fade" id='button-skills'>
             <LeftButton route={routeMain} content={Main} style={style} />
             <RightButton route={routeProjects} content={Project} style={style} />
           </div>

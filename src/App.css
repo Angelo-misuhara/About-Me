@@ -1,10 +1,20 @@
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
-  color: #282A36;
+  color: #282a36;
 }
-body{
-  background-color: #FCF8F9;
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+body {
+  background-color: #fcf8f9;
 }
 .cta-pr-btn:hover svg {
   transform: translateX(5px);
@@ -23,26 +33,25 @@ body{
   }
   #homePage {
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
   }
-  #phonmeIMG{
+  #phonmeIMG {
     display: flex;
     justify-content: center;
     width: 99vw;
   }
-#phonmeIMG img{
+  #phonmeIMG img {
     width: 12rem;
     border-radius: 1rem;
   }
   #title {
-    
   }
   .whitespace-normal {
     text-align: justify;
     width: 20rem;
   }
   #buttons-Homepage {
-    margin-top:2rem;
+    margin-top: 2rem;
   }
 
   #imgSkil {
@@ -51,7 +60,7 @@ body{
     gap: 2rem;
     place-items: center;
     padding-left: 2rem;
-        padding-right: 2rem;
+    padding-right: 2rem;
     padding-top: 2rem;
   }
   .img {
@@ -65,11 +74,29 @@ body{
     padding: 1rem;
     margin-top: 0;
   }
-  #button-skills{
+  #button-skills {
     padding: 0;
     margin-top: 20px;
   }
-  #containerSkill{
+  #containerSkill {
     margin-top: 1rem;
+  }
+  #max-md1 {
+    margin: 0;
+  }
+  #max-md2 {
+    margin: 0;
+  }
+  #max-md3 {
+    margin: 0;
+  }
+  #max-md4 {
+    margin: 0;
+  }
+  #max-md5 {
+    margin: 0;
+  }
+  #conCard {
+    gap: 10rem;
   }
 }
