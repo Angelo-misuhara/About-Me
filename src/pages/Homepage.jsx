@@ -75,7 +75,7 @@ const Homepage = () => {
             </div>
             </div>
             {/*mt-20  */}
-            <div className='mt-[4.5rem] flex flex-col items-start gap-7' id='buttons-Homepage' data-aos='fade'>
+            <div className='mt-[4.5rem] flex flex-col items-start gap-7' id='buttons-Homepage'>
               <RightButton route={routeSkills} content={Skills} style={style} />
               <RightButton  route={routeProjects} content={Project} style={style} />
             </div>
