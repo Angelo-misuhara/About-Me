@@ -50,7 +50,9 @@ body{
     grid-template-columns: 0.5fr 0.5fr 0.5fr;
     gap: 2rem;
     place-items: center;
-    padding: 2rem;
+    padding-left: 2rem;
+        padding-right: 2rem;
+    padding-top: 2rem;
   }
   .img {
     width: 3rem;
