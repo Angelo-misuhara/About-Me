@@ -1,11 +1,15 @@
-// import React from 'react'
-// import { Link } from 'react-router-dom';
+
 import { useEffect, useState } from 'react'
 import RightButton from '../Components/Button'
+import Aos from 'aos'
 
 
 
 const Homepage = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 1700 })
+  })
 
   const routeSkills = '/Skills'
   const routeProjects = '/Projects'
@@ -48,30 +52,30 @@ const Homepage = () => {
     <>
       <div className='bg-[#FCF8F9] w-screen pb-3 grid pt-[3rem]  grid-cols-2 gap-3' id='homePage'>
         
-          <div className='hidden rounded w-2/6' id='phonmeIMG'>
+          <div className='hidden rounded w-2/6' id='phonmeIMG' data-aos='fade-up-right'>
           <img src="/img/imageMainPage5.jpg" alt="" className='border-md' />
         </div>
           <div className=" px-8 flex flex-col" id="intro-left">
               <div className=" flex flex-col " id='title'>
-              <h1 className="font-semibold text-6xl">
+              <h1 className="font-semibold text-6xl"  data-aos='slide-right'>
                 FrontEnd
                 <span className="text-4xl text-[#4FA165]"> Developer</span>
               </h1>
             </div>
-            <div className="flex flex-col mt-3 text-justify">
+            <div className="flex flex-col mt-3 text-justify"  data-aos='fade-up'>
               <p>
                 Hi! Im Angelo. Im aspiring Web Dev, My creativity is the compass that guides me through the boundless ocean of coding possibilities. I approach each project fearlessly, experimenting, and pushing the boundaries to create unforgettable digital experiences.
             </p>
             <div className='flex flex-row gap-2 pt-3'>
                {contacts.map((img, key) => (
-                 <a href={img.link} target='_blank' key={key}>
+                 <a href={img.link} rel='noreferrer' target='_blank' key={key}>
                     <img src={img.img} alt="" className='w-[1rem]'/>
               </a>
             ))}
             </div>
             </div>
             {/*mt-20  */}
-            <div className='mt-[4.5rem] flex flex-col items-start gap-7' id='buttons-Homepage'>
+            <div className='mt-[4.5rem] flex flex-col items-start gap-7' id='buttons-Homepage' data-aos='fade'>
               <RightButton route={routeSkills} content={Skills} style={style} />
               <RightButton  route={routeProjects} content={Project} style={style} />
             </div>
