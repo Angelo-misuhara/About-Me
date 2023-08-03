@@ -3,6 +3,9 @@
   box-sizing: border-box;
   color: #282A36;
 }
+body{
+  background-color: #FCF8F9;
+}
 .cta-pr-btn:hover svg {
   transform: translateX(5px);
 }
@@ -39,7 +42,7 @@
     width: 20rem;
   }
   #buttons-Homepage {
-    margin-top:3rem;
+    margin-top:2rem;
   }
 
   #imgSkil {

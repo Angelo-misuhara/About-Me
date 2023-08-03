@@ -51,7 +51,7 @@ const Homepage = () => {
   }, [images.length]);
   return (
     <>
-      <div className='bg-[#FCF8F9] w-screen pb-3 grid pt-[3rem]  grid-cols-2 gap-3' id='homePage'>
+      <div className='bg-[#FCF8F9] w-screen h-screen pb-3 grid pt-[3rem]  grid-cols-2 gap-3' id='homePage'>
         
           <div className='hidden rounded w-2/6' id='phonmeIMG' data-aos='fade-up-right'>
           <img src="/img/imageMainPage5.jpg" alt="" className='border-md' />
