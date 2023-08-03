@@ -14,7 +14,7 @@
   min-width: 0;
 }
 body {
-  background-color: #fcf8f9;
+  background-color: #4F709C;
 }
 .cta-pr-btn:hover svg {
   transform: translateX(5px);
@@ -44,8 +44,6 @@ body {
     width: 12rem;
     border-radius: 1rem;
   }
-  #title {
-  }
   .whitespace-normal {
     text-align: justify;
     width: 20rem;
@@ -53,21 +51,24 @@ body {
   #buttons-Homepage {
     margin-top: 2rem;
   }
-
+.title h1 span{
+  font-size:2rem ;
+}
   #imgSkil {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 0.5fr;
     gap: 2rem;
     place-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
   }
   .img {
     width: 3rem;
   }
   #paragrapSkill {
     width: 100vw;
+    height: 8rem;
   }
   #ps {
     display: flex;
@@ -79,7 +80,7 @@ body {
     margin-top: 20px;
   }
   #containerSkill {
-    margin-top: 1rem;
+    padding-top: 0;
   }
   #max-md1 {
     margin: 0;

@@ -23,8 +23,8 @@ const Skills = () => {
 
   return (
     <>
-      <div className=' w-screen bg-[#FCF8F9]  grid grid-cols-1 place-content-center pt-[4rem] gap-4 ' id='containerSkill'>
-          <div className=''>
+      <div className=' w-screen h-screen bg-[#FCF8F9]  grid grid-cols-1 place-content-center pt-[4rem] gap-4 ' id='containerSkill'>
+          <div className='title'>
             <h1 className='text-4xl text-center font-medium'data-aos='fade'>
             &gt; <span className='text-5xl 'data-aos='zoom-in-up'> Tech Stack </span>
             </h1>
