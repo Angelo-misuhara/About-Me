@@ -53,9 +53,6 @@ const Homepage = () => {
     <>
       <div className='bg-[#FCF8F9] w-screen h-screen pb-3 grid pt-[3rem]  grid-cols-2 gap-3' id='homePage'>
         
-          <div className='hidden rounded w-2/6' id='phonmeIMG' data-aos='fade-up-right'>
-          <img src="/img/imageMainPage5.jpg" alt="" className='border-md' />
-        </div>
           <div className=" px-8 flex flex-col" id="intro-left">
               <div className=" flex flex-col " id='title'>
               <h1 className="font-semibold text-6xl"  data-aos='slide-right'>
