@@ -42,7 +42,7 @@ const Skills = () => {
               My programming journey has been an exciting adventure. Starting from scratch, I tackled challenges, gained confidence, and now enjoy creating projects of my own. The learning never stops, and I'm thrilled to explore more.
             </p>
           </div>
-          <div className='flex flex-row justify-center gap-4 mt-[5rem]'>
+          <div className='flex flex-row justify-center gap-4 mt-[5rem]' data-aos="fade">
             <LeftButton route={routeMain} content={Main} style={style} />
             <RightButton route={routeProjects} content={Project} style={style} />
           </div>

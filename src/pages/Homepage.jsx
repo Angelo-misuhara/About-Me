@@ -9,6 +9,7 @@ const Homepage = () => {
 
   useEffect(() => {
     Aos.init({ duration: 1700 })
+     Aos.refresh();
   })
 
   const routeSkills = '/Skills'
@@ -75,12 +76,12 @@ const Homepage = () => {
             </div>
             </div>
             {/*mt-20  */}
-            <div className='mt-[4.5rem] flex flex-col items-start gap-7' id='buttons-Homepage'>
+            <div className='mt-[4.5rem] flex flex-col items-start gap-7' id='buttons-Homepage' data-aos='fade'>
               <RightButton route={routeSkills} content={Skills} style={style} />
               <RightButton  route={routeProjects} content={Project} style={style} />
             </div>
           </div>
-            <div className=" flex relative  justify-center pt-[11rem]" id='imgsec'>
+            <div className=" flex relative  justify-center pt-[11rem]" id='imgsec' data-aos='fade'>
             {images.map((img, index) => (
               <img key={index} src={img} alt="" className={` imgg rounded-md w-3/6 absolute opacity-0 ${index === currentImageIndex ? 'visible' : ''}`} />
               ))}
